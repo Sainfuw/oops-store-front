@@ -1,0 +1,10 @@
+@host = http://localhost:1337
+@token = d7a524c12acf025af074e79398f057799bddb9d0a1b52b83feb39b71bcc537a3b85e81b12c7d44388b04b938daa85f7bffb345eae6d0b83cf7abfb4c97df22dee23ad5857db1f47b5ef8405b998e8a18d154b1bd353552faae01b20f0d71f4eab7d58150d398f9794794f5d1ec4191d05d944da645e7f446b93736d2237e3dd2
+
+###
+GET {{host}}/api/home?populate=cover
+Authorization: Bearer {{token}}
+
+###
+GET {{host}}/api/product-categories?fields[0]=name&fields[1]=slug&fields[2]=description&populate[image][fields][0]=url&populate[image][fields][1]=width&populate[image][fields][2]=height
+Authorization: Bearer {{token}}
