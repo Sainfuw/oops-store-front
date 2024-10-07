@@ -1,5 +1,6 @@
 import { getHomeInfo } from '@/lib/get-home-info'
 import { BlocksRenderer } from '@strapi/blocks-react-renderer'
+import Link from 'next/link'
 
 export async function Hero() {
   const { title, description, image } = await getHomeInfo()
@@ -11,9 +12,12 @@ export async function Hero() {
         <div className='w-full text-balance'>
           <BlocksRenderer content={description} />
         </div>
-        <button className='rounded-lg bg-white text-black px-6 py-2 self-start text-sm font-semibold hover:bg-black hover:text-white hover:underline transition-all duration-300'>
+        <Link
+          href='/categories'
+          className='rounded-lg bg-white text-black px-6 py-2 self-start text-sm font-semibold hover:bg-black hover:text-white hover:underline transition-all duration-300'
+        >
           Show categories️
-        </button>
+        </Link>
       </div>
       <img src={image} alt={title} className='w-1/2 rounded-lg' />
     </section>
