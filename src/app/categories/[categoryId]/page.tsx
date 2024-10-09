@@ -7,7 +7,6 @@ export default async function Page({
   params: { categoryId: string }
 }) {
   const { products, pagination } = await getProducts(params.categoryId)
-  console.log(products, pagination)
 
   return (
     <section className='flex gap-16'>
@@ -36,6 +35,7 @@ export default async function Page({
             <p>You havent created any product yet.</p>
           </div>
         )}
+        <div className=''>{pagination.page}</div>
       </div>
     </section>
   )
