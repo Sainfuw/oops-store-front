@@ -21,7 +21,7 @@ export interface IProduct extends IProductBase {
   images: string[]
 }
 
-interface IPagination {
+export interface IPagination {
   page: number
   pageCount: number
   pageSize: number
