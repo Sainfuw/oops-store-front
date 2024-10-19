@@ -1,4 +1,4 @@
-import type { IPagination } from '@/intefaces/products'
+import type { IPagination } from '@/interfaces/products'
 import { cn } from '@/utils/cn'
 import Link from 'next/link'
 

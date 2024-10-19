@@ -1,4 +1,4 @@
-import { ICategory } from '@/intefaces/categories'
+import { ICategory } from '@/interfaces/categories'
 import Link from 'next/link'
 
 export default function Category({ name, image }: ICategory) {

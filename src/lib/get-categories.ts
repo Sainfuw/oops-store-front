@@ -1,4 +1,4 @@
-import { ICategory, ICategoryStrapi } from '@/intefaces/categories'
+import { ICategory, ICategoryStrapi } from '@/interfaces/categories'
 import { query } from './strapi'
 const { STRAPI_HOST } = process.env
 

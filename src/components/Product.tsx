@@ -1,4 +1,4 @@
-import { IProduct } from '@/intefaces/products'
+import { IProduct } from '@/interfaces/products'
 import Link from 'next/link'
 
 export default function Category({ name, slug, images, category }: IProduct) {

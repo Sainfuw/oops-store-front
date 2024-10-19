@@ -1,4 +1,4 @@
-import { IProducts, IProductStrapi } from '@/intefaces/products'
+import { IProducts, IProductStrapi } from '@/interfaces/products'
 import { query } from './strapi'
 const { STRAPI_HOST } = process.env
 
